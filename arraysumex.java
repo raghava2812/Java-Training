@@ -11,7 +11,7 @@ public class arraysumex {
         arr[7] = 14;
         arr[8] = 03;
         for(int i=0; i<arr.length; i++){
-            System.out.println("Array [" +i+" ] :" + arr[i]);
+            System.out.println("Array [ " +i+" ] : " + arr[i]);
             sum=sum+arr[i];
         }
         System.out.println("Sum : " + sum);
