@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2331/2331966.png" type="image">
+    <title>Shopigo</title>
+</head>
+<body style="background-color: beige;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <img style="margin: 10px; width: 30px; height: 30px; float: left;" src="https://cdn-icons-png.flaticon.com/512/2331/2331966.png">
+          <a class="navbar-brand" href="/HTML_CSS/Shopping_Website/main.html">ShopiGO</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              
+              <form style="width: 50rem; margin-left: 15rem;" class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg></button>
+              </form>
+              <li style="margin-left: 5rem;" class="d-flex nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img style="border-radius: 100%; height: 30px; width: 30px;" src="https://png.pngtree.com/png-vector/20190411/ourmid/pngtree-business-male-icon-vector-png-image_916468.jpg" alt="">
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="/HTML_CSS/Shopping_Website/My_Acc.html">My Account</a></li>
+                  <li><a class="dropdown-item" href="/HTML_CSS/Shopping_Website/Orders.html">Orders</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="/HTML_CSS/Shopping_Website/logout.html">Log Out</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a style="margin-left: 7rem;" class="nav-link" href="/HTML_CSS/Shopping_Website/Cart.html"> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                  </svg></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div style="height: 33vh; margin-left: 9px; margin-right: 9px;" id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img src="https://m.media-amazon.com/images/I/41MHIE1THDL._SX1500_.jpg" class="d-block w-100">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="https://m.media-amazon.com/images/I/61FuWeCuGCL._SX3000_.jpg" class="d-block w-100">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="https://m.media-amazon.com/images/I/61qK1Xm3ROL._SX3000_.jpg" class="d-block w-100">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="https://m.media-amazon.com/images/I/71XgNu8d5bL._SX3000_.jpg" class="d-block w-100">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="https://m.media-amazon.com/images/I/61hXw5RjjqL._SX3000_.jpg" class="d-block w-100">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="https://m.media-amazon.com/images/I/51jKifqW4XL._SX3000_.jpg" class="d-block w-100">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="https://m.media-amazon.com/images/I/51-lVSD742L._SX3000_.jpg" class="d-block w-100">
+          </div>
+        </div>
+      </div>
+      <div style="margin: 15px;" class="row">
+        <div class="card" style="width: 23rem; height: 25rem; margin-left: 20px; border-radius: 0%;">
+          <h5 style="padding: 10px;">Revamp your home in style</h5>
+          <div class="row">
+            <div style="height: 160px; width: 160px; margin-left: 10px;" class="card">
+              <img  style="height: 100px; width: 150px;" src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2021/GW/MSO/April/372x232_1_Low._SY116_CB670263840_.jpg">
+              <p>Bedsheets, curtains & more</p>
+            </div>
+            <div style="height: 160px; width: 160px; margin-left: 10px;" class="card">
+              <img  style="height: 100px; width: 150px;" src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2021/GW/MSO/April/372x232_2_Low._SY116_CB670263840_.jpg">
+              <p>Home decoration</p>
+            </div>
+            <div style="height: 160px; width: 160px; margin-left: 10px; margin-top: 10px;" class="card">
+              <img  style="height: 100px; width: 150px;" src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2021/GW/MSO/April/372x232_3_Low._SY116_CB670263840_.jpg">
+              <p>Home Storage</p>
+            </div>
+            <div style="height: 160px; width: 160px; margin-left: 10px; margin-top: 10px;" class="card">
+              <img  style="height: 100px; width: 150px;" src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2021/GW/MSO/April/372x232_4_Low._SY116_CB670263840_.jpg">
+              <p>Lighting Solutions</p>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="width: 22rem; height: 25rem; margin-left: 25px; border-radius: 0%;">
+            <h5 style="padding: 10px;">Up to 70% off | Electronics clearance store</h5>
+            <img style="margin-left: 10px; padding-right: 20px;" src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/CEPC/Clearance/May21/V238940049_IN_PC_BAU_Edit_Creation_Laptops1x._SY304_CB667377205_.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <a style="text-decoration: none; font-weight: 50;" href="#">See More</a>
+            </div>
+          </div>
+          <div class="card" style="width: 23rem; height: 25rem; margin-left: 20px; border-radius: 0%;">
+            <h5 style="padding: 10px;">Upgrade your home | Amazon Brands & more</h5>
+            <div class="row">
+              <div style="height: 150px; width: 160px; margin-left: 10px;" class="card">
+                <img  style="height: 100px; width: 150px;" src="https://images-eu.ssl-images-amazon.com/images/G/31/home_private_label/moritika/week27gw/xcm_banners_tvs_186x116-product-badge-4qqt8_186x116_in-en._SY116_CB663888093_.jpg">
+                <p>Smart LED TVs</p>
+              </div>
+              <div style="height: 150px; width: 160px; margin-left: 10px;" class="card">
+                <img  style="height: 100px; width: 150px;" src="https://images-eu.ssl-images-amazon.com/images/G/31/home_private_label/moritika/week27gw/xcm_banners_la_186x116_186x116_in-en._SY116_CB663888095_.jpg">
+                <p>Appliances</p>
+              </div>
+              <div style="height: 150px; width: 160px; margin-left: 10px; margin-top: 10px;" class="card">
+                <img  style="height: 100px; width: 150px;" src="https://images-eu.ssl-images-amazon.com/images/G/31/home_private_label/moritika/week27gw/xcm_banners_furn_186x116_372x232_in-en._SY116_CB663888090_.jpg">
+                <p>Furniture</p>
+              </div>
+              <div style="height: 150px; width: 160px; margin-left: 10px; margin-top: 10px;" class="card">
+                <img  style="height: 100px; width: 150px;" src="https://images-eu.ssl-images-amazon.com/images/G/31/home_private_label/moritika/week27gw/xcm_banners_kitchen_186x116_186x116_in-en._SY116_CB663888093_.jpg">
+                <p>Kitchen products</p>
+              </div>
+            </div>
+          </div>
+      </div>
+</body>
+</html>
