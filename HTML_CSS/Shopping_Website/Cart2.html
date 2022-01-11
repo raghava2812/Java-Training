@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2331/2331966.png" type="image">
     <link rel="stylesheet" href="/HTML_CSS/Shopping_Website/Cart2.css">
-    <script src="/HTML_CSS/Shopping_Website/Cart2.js"></script>
+    <script src="/HTML_CSS/Shopping_Website/Cart2.js" async></script>
     <title>ShopiGO :: Cart</title>
 </head>
 
@@ -78,7 +78,7 @@
                     <button class="btnmr" onclick="decrement()">-</button>
                 </div>
                 <div class="pricesmr">
-                    <div class="amountmr">Rs. 21,999</div>
+                    <div class="amountmr" id="amt1">Rs. 21999</div>
                     <div class="savemr"><u>Save for later</u></div>
                     <div class="removemr"><u>Remove</u></div>
                 </div>
@@ -98,7 +98,7 @@
                     <button class="btnmr" onclick="decrement1()">-</button>
                 </div>
                 <div class="pricesmr">
-                    <div class="amountmr">Rs. 499</div>
+                    <div class="amountmr" id="amt2">Rs. 499</div>
                     <div class="savemr"><u>Save for later</u></div>
                     <div class="removemr"><u>Remove</u></div>
                 </div>
@@ -118,7 +118,7 @@
                     <button class="btnmr" onclick="decrement2()">-</button>
                 </div>
                 <div class="pricesmr">
-                    <div class="amountmr">Rs. 2,299</div>
+                    <div class="amountmr" id="amt3">Rs. 2299</div>
                     <div class="savemr"><u>Save for later</u></div>
                     <div class="removemr"><u>Remove</u></div>
                 </div>
@@ -139,7 +139,7 @@
                     <button class="btnmr" onclick="decrement3()">-</button>
                 </div>
                 <div class="pricesmr">
-                    <div class="amountmr">Rs. 1,999</div>
+                    <div class="amountmr" id="amt4">Rs. 1999</div>
                     <div class="savemr"><u>Save for later</u></div>
                     <div class="removemr"><u>Remove</u></div>
                 </div>
@@ -151,9 +151,9 @@
             <div class="totalmr">
                 <div>
                     <div class="Subtotalmr">Sub-Total</div>
-                    <div class="itemsmr" id="counttot">5 items</div>
+                    <div class="itemsmr" id="qtytot">Count: 5</div>
                 </div>
-                <div class="total-amountmr">Rs. 27,295</div>
+                <div class="total-amountmr" id="costtot">Rs. 26796</div>
             </div>
             <button style="margin: 10px;" class="buttonmr" onclick="checkout()" id="check">Checkout</button>
         </div>
