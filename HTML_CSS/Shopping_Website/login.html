@@ -11,8 +11,17 @@
     <title>ShopiGO :: Login</title>
     <script>
         function logincheck() {
-            const usernamein = document.getElementsByName('Uname')
-            console.log(usernamein)
+            var usrname = document.getElementById('uname');
+            var passwrd = document.getElementById('pass');
+            if (usrname.value == "" || usrname.value == null || passwrd.value == "" || passwrd.value == null) {
+                alert('Please Enter Username & Password to continue..!');
+                return false;
+            } else if (passwrd.value <= 7 || passwrd.value >= 15) {
+                alert('Invalid Password');
+                return false;
+            } else {
+                return true;
+            }
         }
         // function logincheck() {
         //     const name = document.getElementsByClassName('Uname')
@@ -157,18 +166,18 @@
     <h2 class="mr">Login Page</h2><br>
     <div class="loginmr">
         <img class="rounded-circle mt-3" width="150px" style="margin: 10px;" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg">
-        <form id="login">
+        <form id="login" onsubmit="return logincheck()" action="/HTML_CSS/Shopping_Website/main2.html">
             <label class="mr"><b>UserName :
                 </b>
             </label>
-            <input type="text" name="Uname" id="Uname" placeholder="Username" value="Muni2826" required>
+            <input type="text" name="Uname" id="uname" placeholder="Username" value="">
             <br><br>
             <label class="mr"><b>Password :
                 </b>
             </label>
-            <input type="Password" name="Pass" id="Pass" placeholder="Password" value="muniraghava" required>
+            <input type="Password" name="Pass" id="pass" placeholder="Password" value="">
             <br><br>
-            <input type="button" onclick="logincheck()" name="log" id="log" value="Log In Here" class="btn btn-success">
+            <input type="submit" name="log" id="loggo" value="Log In Here" class="btn btn-success">
             <br><br>
             <input type="checkbox" id="check">
             <span class="mr">Remember me</span>
