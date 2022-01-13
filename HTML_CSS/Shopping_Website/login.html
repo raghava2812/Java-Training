@@ -15,11 +15,14 @@
             var passwrd = document.getElementById('pass');
             if (usrname.value == "" || usrname.value == null || passwrd.value == "" || passwrd.value == null) {
                 alert('Please Enter Username & Password to continue..!');
+                document.getElementById('uname').style = "border-color: red"
+                document.getElementById('pass').style = "border-color: red"
                 return false;
             } else if (passwrd.value <= 7 || passwrd.value >= 15) {
                 alert('Invalid Password');
                 return false;
             } else {
+                window.location.replace("/HTML_CSS/Shopping_Website/main2.html")
                 return true;
             }
         }
@@ -166,7 +169,7 @@
     <h2 class="mr">Login Page</h2><br>
     <div class="loginmr">
         <img class="rounded-circle mt-3" width="150px" style="margin: 10px;" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg">
-        <form id="login" onsubmit="return logincheck()" action="/HTML_CSS/Shopping_Website/main2.html">
+        <form id="login">
             <label class="mr"><b>UserName :
                 </b>
             </label>
@@ -177,7 +180,7 @@
             </label>
             <input type="Password" name="Pass" id="pass" placeholder="Password" value="">
             <br><br>
-            <input type="submit" name="log" id="loggo" value="Log In Here" class="btn btn-success">
+            <input type="submit" onclick="logincheck()" name="log" id="loggo" value="Log In Here" class="btn btn-success">
             <br><br>
             <input type="checkbox" id="check">
             <span class="mr">Remember me</span>
