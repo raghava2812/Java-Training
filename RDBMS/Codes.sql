@@ -1,4 +1,7 @@
 USE flipkart;
 SELECT * FROM CUSTOMER;
 SELECT * FROM ORDERS;
+delete from CUSTOMER where grade is null;
 SELECT * FROM CUSTOMER FULL JOIN ORDERS ON CUSTOMER.SALESMAN_ID = ORDERS.SALESMAN_ID;
+SELECT * FROM empdetailsm;
+update CUSTOMER set grade=100 where customer_id=3001;

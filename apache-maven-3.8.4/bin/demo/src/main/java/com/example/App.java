@@ -23,7 +23,7 @@ public class App {
 
 
         ResultSet rs = con.createStatement()
-                .executeQuery("select * from CUSTOMER");
+                .executeQuery("select * from ORDERS");
 
         
         while (rs.next()) {
