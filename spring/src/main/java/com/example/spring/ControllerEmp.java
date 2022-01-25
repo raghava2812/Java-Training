@@ -3,6 +3,8 @@ package com.example.spring;
 import java.lang.module.ResolutionException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -33,9 +35,11 @@ public class ControllerEmp {
 
     @GetMapping("/getid/{ids}")
     public response getId(@PathVariable String ids){
-        for(int i=0; i<list.size()-1; i++){
-            return new response(200, "Succeed", list.get(i));
-        }
-        return new response(150, "No", null);
+       Optional<Employee> empp = list.stream().filter(emp -> emp.getId().equals(ids)).findFirst();
+       if(empp.isPresent()){
+           return new response(202, "Details Found", empp.get());
+       }else{
+           return new response(404, "Details Not Found", null);
+       }
     }
 }

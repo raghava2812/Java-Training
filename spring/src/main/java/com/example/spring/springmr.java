@@ -40,4 +40,9 @@ public class springmr {
     public String add(@PathVariable String a,@PathVariable int b){
         return (a + b);
     }
+
+    @GetMapping("/add2/{a}/{b}")
+    public String add2(@PathVariable String a,@PathVariable int b){
+        return (a + b);
+    }
 }
