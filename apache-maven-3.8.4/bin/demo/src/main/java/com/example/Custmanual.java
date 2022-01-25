@@ -56,11 +56,20 @@ public class Custmanual {
                     break;
                 case 3:
                     System.out.println("Enter Data required to Update :");
-                    System.out.println("Enter Complete SQL Query to UPDATE Req. DATA");
-                    Scanner s12 = new Scanner(System.in);
-                    String query = s12.nextLine();
-                    Statement st2 = con.createStatement();
-                    st2.execute(query);
+                    Scanner s2 = new Scanner(System.in);
+                    // System.out.println(" a-Customer_Id \n b-Cust Name \n c-City \n d-Grade \n e-Salesman_Id");
+                    String valueb = s2.nextLine();
+                    // System.out.println(" a-Customer_Id \n b-Cust Name \n c-City \n d-Grade \n e-Salesman_Id");
+                    Scanner s3 = new Scanner(System.in);
+                    int valuea = s3.nextInt();
+                    PreparedStatement ps1 = con.prepareStatement("UPDATE CUSTOMER SET cust_name=? WHERE customer_id=?");
+                    // System.out.println("Enter Complete SQL Query to UPDATE Req. DATA");
+                    // Scanner s12 = new Scanner(System.in);
+                    // String query = s12.nextLine();
+                    // Statement st2 = con.createStatement();
+                    ps1.setString(1, valueb);
+                    ps1.setInt(2, valuea);
+                    ps1.executeUpdate();
                     System.out.println("Updated...!");
                     break;
                 case 4:
@@ -77,15 +86,15 @@ public class Custmanual {
                 case 5:
                     System.exit(0);
                     s.close();
-                case 6:
-                    Statement sst1 = con.createStatement();
-                    ResultSet rs1 = sst1.executeQuery("SELECT * FROM CUSTOMER");
-                    ResultSetMetaData metdata = rs1.getMetaData();
-                    int count = metdata.getColumnCount();
-                    for (int i = 1; i <= count; i++) {
-                        System.out.println(metdata.getColumnName(i));
-                    }
-                    break;
+                // case 6:
+                //     Statement sst1 = con.createStatement();
+                //     ResultSet rs1 = sst1.executeQuery("SELECT * FROM CUSTOMER");
+                //     ResultSetMetaData metdata = rs1.getMetaData();
+                //     int count = metdata.getColumnCount();
+                //     for (int i = 1; i <= count; i++) {
+                //         System.out.println(metdata.getColumnName(i));
+                //     }
+                //     break;
                 default:
                     System.out.println("Wrong Input...");
                     break;
