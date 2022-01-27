@@ -12,13 +12,4 @@ import lombok.ToString;
 public class addModel {
     String a;
     int b;
-    // public int getA() {
-    //     return a;
-    // }
-    public int getB() {
-        return b;
-    }
-    public String getA() {
-        return a;
-    }
 }

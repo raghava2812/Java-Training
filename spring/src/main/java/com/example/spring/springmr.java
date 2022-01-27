@@ -45,4 +45,5 @@ public class springmr {
     public String add2(@PathVariable String a,@PathVariable int b){
         return (a + b);
     }
+
 }
