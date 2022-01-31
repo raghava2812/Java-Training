@@ -2,8 +2,6 @@ package com.example.spring;
 
 import java.util.Scanner;
 
-import org.yaml.snakeyaml.events.StreamStartEvent;
-
 public class junitcodes {
     public static int add(int a,int b){
         return (a+b);

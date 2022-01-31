@@ -4,14 +4,14 @@ import java.sql.*;
 import java.util.*;
 
 public class Custmanual {
-    // private static String url = "jdbc:mysql://localhost/flipkart";
-    // private static String user = "root";
-    // private static String pass = "199812";
+    private static String url = "jdbc:mysql://localhost/flipkart";
+    private static String user = "root";
+    private static String pass = "199812";
 
     public static void main(String[] args) throws SQLException {
 
-        Connection con = DriverManager.getConnection("jdbc:mysql://localhost/flipkart", "root", "199812");
-        // Connection con = DriverManager.getConnection(url, user, pass);
+        // Connection con = DriverManager.getConnection("jdbc:mysql://localhost/flipkart", "root", "199812");
+        Connection con = DriverManager.getConnection(url, user, pass);
         Scanner s = new Scanner(System.in);
 
         while (true) {
@@ -67,6 +67,7 @@ public class Custmanual {
                     // Scanner s12 = new Scanner(System.in);
                     // String query = s12.nextLine();
                     // Statement st2 = con.createStatement();
+                    // st2.execute(query);
                     ps1.setString(1, valueb);
                     ps1.setInt(2, valuea);
                     ps1.executeUpdate();

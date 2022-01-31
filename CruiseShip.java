@@ -25,6 +25,5 @@ public class CruiseShip extends Ship {
 
     @Override
     public void calculateBill(String cuisine) {
-        // TODO Auto-generated method stub
     }
 }
