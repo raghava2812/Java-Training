@@ -9,7 +9,7 @@ public class StudentJDBC {
         Scanner scn = new Scanner(System.in);
 
         while(true){
-            System.out.println("____________________ CHOICE ____________________");
+            System.out.println("________________________ CHOICE ________________________");
             System.out.println(" 1. Show Table Data \n 2. Insert Data into Table \n 3. Delete Data \n 4. Update Data \n 5. Truncate Table Data \n 6. Drop Table \n 7. Enter Complete SQL Query \n 8. Exit");
             System.out.print("Enter Your Choice : ");
             int choice = scn.nextInt();
