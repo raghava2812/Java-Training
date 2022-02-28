@@ -19,7 +19,6 @@ public final class EdgeApp {
         WebElement r = dve.findElement(By.name("q"));
         r.sendKeys("technewsmr");
         r.sendKeys(Keys.RETURN);
-
         dve.quit();
     }
 }
