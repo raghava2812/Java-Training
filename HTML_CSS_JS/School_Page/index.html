@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My School</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav>
+            <input type="checkbox" id="show-search">
+            <input type="checkbox" id="show-menu">
+            <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+            <div class="content">
+
+                <div class="logo"><a href="./index.html">My School</a></div>
+                <ul class="links">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li>
+                        <a href="#" class="desktop-link">Admissions</a>
+                        <input type="checkbox" id="show-features">
+                        <label for="show-features">Admissions</label>
+                        <ul>
+                            <li><a href="#">Drop Menu 1</a></li>
+                            <li><a href="#">Drop Menu 2</a></li>
+                            <li><a href="#">Drop Menu 3</a></li>
+                            <li><a href="#">Drop Menu 4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="desktop-link">Activites</a>
+                        <input type="checkbox" id="show-services">
+                        <label for="show-services">Activites</label>
+                        <ul>
+                            <li><a href="#">Sports</a></li>
+                            <li><a href="#">Programs</a></li>
+                            <li><a href="#">Quiz Events</a></li>
+                            <!-- <li>
+                <a href="#" class="desktop-link">More Items</a>
+                <input type="checkbox" id="show-items">
+                <label for="show-items">More Items</label>
+                <ul>
+                  <li><a href="#">Sub Menu 1</a></li>
+                  <li><a href="#">Sub Menu 2</a></li>
+                  <li><a href="#">Sub Menu 3</a></li>
+                </ul>
+              </li> -->
+                        </ul>
+                    </li>
+                    <li><a href="./contact.html">Contact us</a></li>
+                </ul>
+            </div>
+            <!-- <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+      <form action="#" class="search-box">
+        <input type="text" placeholder="Type Something to Search..." required>
+        <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+      </form> -->
+        </nav>
+
+
+    </div>
+    <!-- 
+  <div class="dummy-text">
+   
+    <h2>My School</h2>
+    <h2>Learn as much as you can while you are young, since life becomes too busy later</h2>
+
+
+  </div> -->
+
+    <section id="home" class="home">
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <!-- <div class="numbertext">1 / 3</div> -->
+                <div>Hello</div>
+                <img src="./image/3.jpg" style="width:100%">
+                <!-- <div class="text">Caption Text</div> -->
+
+            </div>
+
+            <div class="mySlides fade">
+                <!-- <div class="numbertext">2 / 3</div> -->
+                <img src="./image/4.jpg" style="width:100%">
+                <!-- <div class="text">Caption Two</div> -->
+            </div>
+
+            <div class="mySlides fade">
+                <!-- <div class="numbertext">3 / 3</div> -->
+                <img src="./image/1.jpg" style="width:100%">
+                <!-- <div class="text">Caption Three</div> -->
+            </div>
+
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <script>
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                    slideIndex = 1
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                setTimeout(showSlides, 3000); // Change image every 2 seconds
+            }
+        </script>
+
+    </section>
+
+
+</body>
+
+</html>
